@@ -13,8 +13,8 @@
         run: |
          ls
          pwd
-       - name: Install Virtualenv and execute pytest
-       run: |
+      - name: Install Virtualenv and execute pytest
+        run: |
           
           pip install virtualenv
           virtualenv env
