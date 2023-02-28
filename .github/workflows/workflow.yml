@@ -44,7 +44,7 @@ jobs:
           virtualenv env
           source env/bin/activate 
           pip install -r requirements.txt
-          pyest
+          pytest
           name: Configure AWS Credentials
           uses: aws-actions/configure-aws-credential@v1
           with: 
