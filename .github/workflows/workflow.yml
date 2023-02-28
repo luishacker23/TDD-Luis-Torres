@@ -50,6 +50,9 @@ jobs:
           with: 
    
           aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
-          aws-secret-access-key: ${{secrests.AWS_SECRET_ACCES}}
-          aws-session-token: ${{secrests.AWS_SESSION_TOKEN}}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+          aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
           aws-region: us-east-1
+      - name: Funciones Bucket
+        run: |
+          aws s3 cp taller.py s3://buckedd28
