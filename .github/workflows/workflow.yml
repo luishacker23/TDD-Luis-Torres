@@ -55,4 +55,4 @@ jobs:
           aws-region: us-east-1
       - name: Funciones Bucket
         run: |
-          aws s3 cp taller.py s3://buckedd28/taller.py
+          aws s3 cp funcion.py s3://buckedd28/funcion.py
