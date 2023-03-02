@@ -56,3 +56,9 @@ jobs:
       - name: Funciones Bucket
         run: |
           aws s3 cp funcion.py s3://buckedd28/funcion.py
+          
+      - name: Zappa
+        run: |
+           zappa update 
+           zappa deployed
+
